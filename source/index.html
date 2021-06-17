@@ -162,22 +162,12 @@
             var sec = 0;
             //获取随机天数
             var time = {
-              YRS: getRandom(0,50),
-              DAY: getRandom(0,360),
-              HRS: getRandom(0,23),
-              MIN: getRandom(0,59),
-              SEC: getRandom(0,60),
-            };
-            //随机挑选幸运用户设置1分钟5秒的时间
-            if(getRandom(1,4) == 1){
-              time = {
-                YRS: 0,
-                DAY: 0,
-                HRS: 0,
-                MIN: 1,
-                SEC: 5,
-              };
-            }
+              YRS: getRandom(99,101),
+              DAY: getRandom(350,360),
+              HRS: getRandom(22,23),
+              MIN: getRandom(57,59),
+              SEC: getRandom(58,60),
+            } 
             //计算并叠加秒数
             sec += time.YRS*12*30*24*60*60;
             sec += time.DAY*24*60*60;
